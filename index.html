@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Salute! Ripeto | 東京都豊島区にあるイタリアンレストラン</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="style/main.css" >
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-md center-block">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">
+                    <a href="#"><img src="./img/logo1.png" alt="Salute! Ripeto"></a>
+                </h1>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Floor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Daily Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Event</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Privacy Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SiteMap</a></li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item m-2"><a href="_blank"><img alt="twitter" src="./img/menu_tw.svg"></a></li>
+                    <li class="nav-item m-2"><a href="_blank"><img alt="instagram" src="./img/menu_ig.svg"></a></li>
+                    <li class="nav-item m-2"><a href="_blank"><img alt="facebook" src="./img/menu_fb.svg"></a></li>
+                </ul>
+            </div>           
+        </nav>
+    </header>
+    <main classs=".container-xxl">
+        <div class="main-visual">
+            <div class="new-informaition shadow bg-dark rounded">
+                <div class="new-informaition-spinner d-flex align-items-center justify-content-center">
+                    <div class="spinner-border" role="status"></div>
+                </div>
+                <div class="new-informaition-wrapper d-none">
+                    <h3 class="visually-hidden">Information</h3>
+                    <p id="new-informaition-date">〇〇〇〇年〇〇月〇〇日</p>
+                    <h3 id="new-informaition-title">お知らせタイトル</h3>
+                    <p  id="new-informaition-detail">お知らせ詳細</p>
+                    <div>
+                        <a id="new-informaition-link" href="_blank">More Information</a>
+                    </div>
+                </div>
+            </div>
+            <div class="new-todaysmenu shadow bg-dark rounded">
+                <div class="new-todaysmenu-spinner d-flex align-items-center justify-content-center">
+                    <div class="spinner-border" role="status"></div>
+                </div>
+                <div class="new-todaysmenu-wrapper d-none d-flex justify-content-evenly">
+                    <div>
+                        <h3>Today's Menu</h3>
+                        <p id="new-todaysmenu-date">〇〇〇〇年〇〇月〇〇日</p>
+                        <p id="new-todaysmenu-menu">メニュー名</p>
+                    </div>
+                    <div class="align-items-center">
+                        <img src="./img/todaysmenu.jpg" alt="最新の今日のメニュー" width="157" height="114">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./img/slider1.png)"></div>
+                    <div class="swiper-slide" style="background-image: url(./img/slider2.png)"></div>
+                    <div class="swiper-slide" style="background-image: url(./img/slider3.png)"></div>
+                    <div class="swiper-slide" style="background-image: url(./img/slider4.png)"></div>
+                    <div class="swiper-slide" style="background-image: url(./img/slider5.png)"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-nav d-flex justify-content-between">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="greeting d-flex align-items-center justify-content-center">
+            <p class="lead">
+                <strong>Salute Ripeto</strong> はイタリア語で<strong>《繰り返し乾杯》</strong><br>
+                <br>
+                「サボテンに赤い花が咲いた」<br>
+                「天気予報では雨だったのに、次の日晴れだった」<br>
+                <br>
+                そんな些細な日常の<br>
+                ちょっとした嬉しい出来事や記念に<br>
+                乾杯しませんか<br>
+                <br>
+                選りすぐりのお酒と料理を準備しました<br>
+                是非お立ち寄りください
+            </p>
+        </div>
+
+        <div class="salute d-flex align-items-center justify-content-center">
+            <img id="salute1" src="./img/salute1.png" width="138px" height="138px">
+        </div>
+
+        <div class="content floor">
+            <div class="content-wrapper">
+                <h2 class="content-title">Floor</h2>
+                <div class="d-flex justify-content-evenly is-hidden">
+                    <img class="order-1 content-image" src="./img/floor.png" alt="店内の写真">
+                    <div class="order-2 content-text">
+                        <p>
+                            〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇<br>
+                        </p>
+                        <a href="#">詳細はこちら &gt;&gt;&gt;&gt;&gt;&gt;&gt;</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="salute d-flex align-items-center justify-content-center">
+            <img id="salute2" src="./img/salute2.png" width="138px" height="138px">
+        </div>
+
+        <div class="content menu">
+            <div class="content-wrapper">
+                <h2 class="content-title">Menu</h2>
+                <div class="d-flex justify-content-evenly is-hidden">
+                    <img class="order-2 content-image" src="./img/menu.png" alt="料理の写真">
+                    <div class="order-1 content-text">
+                        <p>
+                            〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇<br>
+                        </p>
+                        <a href="#">詳細はこちら &gt;&gt;&gt;&gt;&gt;&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="salute d-flex align-items-center justify-content-center">
+            <img id="salute3" src="./img/salute3.png" width="138px" height="138px">
+        </div>
+
+        <div class="content event">
+            <div class="content-wrapper">
+                <h2 class="content-title">Event</h2>
+                <div class="d-flex justify-content-evenly is-hidden">
+                    <img class="order-1 content-image" src="./img/event.png" alt="イベントの写真">
+                    <div class="order-2 content-text">
+                        <p>
+                            〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇<br>
+                        </p>
+                        <a href="#">詳細はこちら &gt;&gt;&gt;&gt;&gt;&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="salute d-flex align-items-center justify-content-center">
+            <img id="salute4" src="./img/salute4.png" width="138px" height="138px">
+        </div>
+
+        <div class="content contact">
+            <div class="content-wrapper">
+                <h2 class="content-title">Contact</h2>
+                <div class="d-flex justify-content-evenly is-hidden">
+                    <img class="order-2 content-image" src="./img/contact.png" alt="店内の写真">
+                    <div class="order-1 content-text">
+                        <p>
+                            〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇〇〇<br>
+                            〇〇〇〇〇〇〇〇<br>
+                        </p>
+                        <a href="#">詳細はこちら &gt;&gt;&gt;&gt;&gt;&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="salute d-flex align-items-center justify-content-center">
+            <img id="salute5" src="./img/salute5.png" width="138px" height="138px">
+        </div>
+
+        <div class="shop">
+            <div class="shop-info-wrapper d-flex align-items-center justify-content-center">
+                <div class="order-2 shop-info">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <img class="shop-info-logo" alt="logo" src="./img/logo2.png">
+                        </div>
+                        <div>
+                            <p class="shop-type">Italian Restaurant</p>
+                            <p class="shop-name">Salute! Ripeto</p>
+                        </div>
+                    </div>
+                    <p class="shop-address">〒999-9999<br>
+                    東京都豊島区〇〇〇〇〇<br>
+                    ℡ 99-9999-9999
+                    </p>
+                    <p class="shop-business">営業時間 18:00-23:30(L.O.23:00)<br>
+                    定休日　月曜日</p>
+                    <ul class="shop-sns d-flex">
+                        <li class="shop-sns-item"><a href="_blank"><img alt="twitter" src="./img/menu_tw.svg"></a></li>
+                        <li class="shop-sns-item"><a href="_blank"><img alt="instagram" src="./img/menu_ig.svg"></a></li>
+                        <li class="shop-sns-item"><a href="_blank"><img alt="facebook" src="./img/menu_fb.svg"></a></li>
+                    </ul>    
+                </div>
+                <div class="order-1 shop-map">
+                    <iframe class="order-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.6203589082895!2d139.7215919778991!3d35.738969900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d7cd01d8369%3A0xab28a116fad95b63!2z44CSMTcwLTAwMTIg5p2x5Lqs6YO96LGK5bO25Yy65LiK5rGg6KKL77yU5LiB55uu77yR4oiS77yYIOOCouOCpOODq-axoOiii05vcnRo5Y-C55Wq6aSo!5e0!3m2!1sja!2sjp!4v1670377111712!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <P>Copyright 2022 Salute! Ripeto Italian Restaurant</P>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #0C0C0C;
+    color: #eeeeee;
+    line-height: 150%;
+}
+
+header {
+    width: 100%;
+    background-color: #0C0C0C;
+    text-align: center;
+    font-family: "Sawarabi Gothic";
+}
+
+main {
+    /*background-image: url("../img/bg_wine.jpg");*/
+    background-image: url("../img/background001.jpg");
+    background-attachment: fixed;
+    font-family: "Sawarabi Mincho";
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    background-color: #0c0c0c;
+    text-align: center;
+}
+
+nav {
+    width: 1200px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+nav .navbar-brand {
+    line-height: 80px;
+}
+
+a {
+    font-family: "Sawarabi Gothic";
+    color: #85D2C7;
+}
+
+a:hover {
+    color: #D06000;
+}
+
+li, ol {
+    list-style: none; 
+}
+
+.navbar .navbar-nav .nav-item a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.main-visual {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    aspect-ratio: 1600 / 646;
+    min-width: 1200px;
+    min-height: 495px;
+    z-index: 0;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-prev:after,.swiper-button-next:after {
+    display: none;
+}
+
+.swiper-nav {
+    position: absolute;
+    top: 18px;
+    left: 0;
+
+    right: 0;
+    width: 144px;
+    margin: 0 auto;    
+}
+
+.swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    background-image: url("../img/navi_allow_wh2_left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.swiper-button-prev:hover {
+    background-image: url("../img/navi_allow_wh2_left_on.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.swiper-button-next {
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    background-image: url("../img/navi_allow_wh2_right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.swiper-button-next:hover {
+    background-image: url("../img/navi_allow_wh2_right_on.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.swiper-pagination {
+    text-align: left;
+}
+
+.swiper-pagination-bullets {
+    top: 18px !important;
+    left: 26px !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+.swiper-pagination-bullet {
+    width: 64px;
+    height: 36px;
+    margin: 0 6px !important;
+    display: inline-block;
+    border-radius: 8px;
+    background: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    border: solid 1px #FFFFFF;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    border: solid 1px #FFFFFF;
+}
+
+.new-informaition {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    width: 453px;
+    height: 230px;
+    z-index: 1;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.new-informaition-spinner {
+    width: 100%;
+    height: 100%;
+}
+
+.new-informaition-wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: "Sawarabi Mincho";
+}
+
+.new-todaysmenu {
+    position: relative;
+    top: 0px;
+    left: 32px;
+    margin: auto 0 0 0;
+
+    width: 398px;
+    height: 169px;
+    z-index: 1;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.new-todaysmenu-spinner {
+    width: 100%;
+    height: 100%;
+}
+
+.new-todaysmenu-wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: "Sawarabi Mincho";
+}
+
+.greeting {
+    position: relative;
+    width: 100%;
+    height: 734px;
+    line-height: 300%;
+    text-align: center;
+    background-color: #0C0C0C;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 734px;
+    background-color: #0C0C0C;
+}
+
+.content .content-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.content-title {
+    display: inline-block;
+    width: 100%;
+    height: 208px;
+    line-height: 208px;
+    text-align: center;
+    font-size: 42px;
+    font-style: italic;
+}
+
+.content-image {
+    display: inline-block;
+    width: 480px;
+    height: 360px;
+    border: 2px solid #ddd;
+    transition-duration: 0.6s;
+}
+
+.content-image:hover {
+    transform:scale(1.1,1.1);
+    /*box-shadow: 16px 16px 16px rgba(0,0,0,0.5);*/
+    /*transform: translateY(-16px);*/
+    transition-duration: 0.6s;
+}
+
+.content-text {
+    position: relative;
+    width: 480px;
+    height: 360px;
+    line-height: 150%;
+    font-size: 28px;
+}
+
+.content-text p {
+    position: relative;
+    top: 16px;
+    display: inline-block;
+}
+
+.content-text a {
+    position: relative;
+    top: 32px;
+    display: inline-block;
+}
+
+.salute {
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.shop {
+    position: relative;
+    width: 100%;
+    height: 734px;
+    /* background-color: #0c0c0c; */
+    background-image: url("../img/bg_alacarto02.jpg");
+}
+
+.shop .shop-info-wrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    height: 100%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.shop .shop-info-wrapper .shop-map {
+    width: 480px;
+    height: 440px;
+    overflow: hidden;
+    filter: sepia(50%);
+    border-radius: 24px;
+}
+
+.shop .shop-info-wrapper .shop-map iframe {
+    width: 480px;
+    height: 800px;
+    margin-top: -170px;
+}
+
+.shop .shop-info-wrapper .shop-info {
+    width: 480px;
+    height: 440px;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.shop .shop-info-wrapper .shop-info .shop-info-logo {
+    display: in;
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+}
+
+.shop .shop-info-wrapper .shop-info .shop-type {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 28px;
+    font-family: "Sawarabi Gothic";
+}
+
+.shop .shop-info-wrapper .shop-info .shop-name {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 42px;
+}
+
+.shop .shop-info-wrapper .shop-address {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 24px;
+    line-height: 150%;
+    font-family: "Sawarabi Gothic";
+}
+
+.shop .shop-info-wrapper .shop-business {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.shop .shop-info-wrapper .shop-sns {
+    padding: 20px 0 0 0;
+}
+
+.shop .shop-info-wrapper .shop-sns-item {
+    margin-right: 24px;
+}
+
+.shop .shop-info-wrapper .shop-sns-item img {
+    width: 36px;
+    height: 36px;
+}
