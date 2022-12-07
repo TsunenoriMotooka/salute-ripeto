@@ -102,17 +102,17 @@ $(document).ready(function(){
         $(element).css("background-image", image);
     });
 
-    // if ($(window).scrollTop() > 0) {
-    //     $("html,body").scrollTop(0);
-    //     $(window).on("scroll", () => {
-    //         if ($(window).scrollTop() <= 0) {
-    //             $(window).off("scroll");
-    //             main();
-    //         }
-    //     });
-    // } else {
-    //     main();
-    // }
+    if ($(window).scrollTop() > 0) {
+        $("html,body").scrollTop(0);
+        $(window).on("scroll", () => {
+            if ($(window).scrollTop() <= 0) {
+                $(window).off("scroll");
+                main();
+            }
+        });
+    } else {
+        main();
+    }
 });
 
 async function todaysMenuTop () {
