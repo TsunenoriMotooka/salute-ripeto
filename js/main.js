@@ -16,6 +16,10 @@ const swiper = new Swiper(".swiper", {
 let todaysMenuTopTimer;
 
 async function main () {
+    $(".footer-page-top").click(() => {
+        $("html,body").animate({ scrollTop: 0 }, 500);
+    });
+
     $(window).resize(()=>{
         clearTimeout(todaysMenuTopTimer);
         todaysMenuTopTimer = setTimeout(()=>{
@@ -102,17 +106,18 @@ $(document).ready(function(){
         $(element).css("background-image", image);
     });
 
-    if ($(window).scrollTop() > 0) {
-        $("html,body").scrollTop(0);
-        $(window).on("scroll", () => {
-            if ($(window).scrollTop() <= 0) {
-                $(window).off("scroll");
-                main();
-            }
-        });
-    } else {
-        main();
-    }
+    main();
+    // if ($(window).scrollTop() > 0) {
+    //     $("html,body").scrollTop(0);
+    //     $(window).on("scroll", () => {
+    //         if ($(window).scrollTop() <= 0) {
+    //             $(window).off("scroll");
+    //             main();
+    //         }
+    //     });
+    // } else {
+    //     main();
+    // }
 });
 
 async function todaysMenuTop () {

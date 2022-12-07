@@ -30,6 +30,23 @@ footer {
     text-align: center;
 }
 
+footer .footer-page-top {
+    position: fixed;
+    right: 48px;
+    bottom: 16px;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    background-image: url("../img/navi_allow_wh2_top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+footer .footer-page-top:hover {
+    background-image: url("../img/navi_allow_wh2_top_on.png");
+}
+
 nav {
     width: 1200px;
     height: 80px;
@@ -315,19 +332,19 @@ li, ol {
     width: 1200px;
     height: 100%;
     vertical-align: middle;
-    color: #000000;
 }
 
 .shop .shop-info-wrapper .shop-map {
-    width: 480px;
-    height: 440px;
+    width: 400px;
+    height:  440px;
+    margin-right: 44px;
     overflow: hidden;
     filter: sepia(50%);
-    border-radius: 24px;
+    border-radius: 8px;
 }
 
 .shop .shop-info-wrapper .shop-map iframe {
-    width: 480px;
+    width: 400px;
     height: 800px;
     margin-top: -170px;
 }
@@ -337,6 +354,8 @@ li, ol {
     height: 440px;
     padding-top: 24px;
     padding-left: 24px;
+    background-color: #0c0c0cc0;
+    border-radius: 8px;    
 }
 
 .shop .shop-info-wrapper .shop-info .shop-info-logo {
@@ -349,20 +368,19 @@ li, ol {
 .shop .shop-info-wrapper .shop-info .shop-type {
     display: inline-block;
     margin-top: 24px;
-    font-size: 28px;
+    font-size: 22px;
     font-family: "Sawarabi Gothic";
 }
 
 .shop .shop-info-wrapper .shop-info .shop-name {
     display: inline-block;
-    margin-top: 16px;
     font-size: 42px;
 }
 
 .shop .shop-info-wrapper .shop-address {
     display: inline-block;
-    margin-top: 8px;
-    font-size: 24px;
+    margin-top: 24px;
+    font-size: 18px;
     line-height: 150%;
     font-family: "Sawarabi Gothic";
 }
@@ -370,8 +388,9 @@ li, ol {
 .shop .shop-info-wrapper .shop-business {
     display: inline-block;
     margin-top: 8px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 150%;
+    font-family: "Sawarabi Gothic";
 }
 
 .shop .shop-info-wrapper .shop-sns {
@@ -379,10 +398,10 @@ li, ol {
 }
 
 .shop .shop-info-wrapper .shop-sns-item {
-    margin-right: 24px;
+    margin-right: 18px;
 }
 
 .shop .shop-info-wrapper .shop-sns-item img {
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
 }
