@@ -59,6 +59,13 @@ nav .navbar-brand {
     line-height: 80px;
 }
 
+nav .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 a {
     font-family: "Sawarabi Gothic";
     color: #85D2C7;
@@ -250,6 +257,7 @@ li, ol {
     width: 1200px;
     height: 100%;
     margin: 0 auto 0 auto;
+    text-align: center;
 }
 
 .content-title {
@@ -324,7 +332,7 @@ li, ol {
     background-image: url("../img/bg_alacarto02.jpg");
 }
 
-.shop .shop-info-wrapper {
+.shop .shop-wrapper {
     position: relative;
     left: 0;
     right: 0;
@@ -334,7 +342,7 @@ li, ol {
     vertical-align: middle;
 }
 
-.shop .shop-info-wrapper .shop-map {
+.shop .shop-wrapper .shop-map {
     width: 400px;
     height:  440px;
     margin-right: 44px;
@@ -343,13 +351,13 @@ li, ol {
     border-radius: 8px;
 }
 
-.shop .shop-info-wrapper .shop-map iframe {
+.shop .shop-wrapper .shop-map iframe {
     width: 400px;
     height: 800px;
     margin-top: -170px;
 }
 
-.shop .shop-info-wrapper .shop-info {
+.shop .shop-wrapper .shop-info {
     width: 480px;
     height: 440px;
     padding-top: 24px;
@@ -358,26 +366,26 @@ li, ol {
     border-radius: 8px;    
 }
 
-.shop .shop-info-wrapper .shop-info .shop-info-logo {
+.shop .shop-wrapper .shop-info .shop-info-logo {
     display: in;
     width: 128px;
     height: 128px;
     margin-right: 16px;
 }
 
-.shop .shop-info-wrapper .shop-info .shop-type {
+.shop .shop-wrapper .shop-info .shop-type {
     display: inline-block;
     margin-top: 24px;
     font-size: 22px;
     font-family: "Sawarabi Gothic";
 }
 
-.shop .shop-info-wrapper .shop-info .shop-name {
+.shop .shop-wrapper .shop-info .shop-name {
     display: inline-block;
     font-size: 42px;
 }
 
-.shop .shop-info-wrapper .shop-address {
+.shop .shop-wrapper .shop-address {
     display: inline-block;
     margin-top: 24px;
     font-size: 18px;
@@ -385,7 +393,7 @@ li, ol {
     font-family: "Sawarabi Gothic";
 }
 
-.shop .shop-info-wrapper .shop-business {
+.shop .shop-wrapper .shop-business {
     display: inline-block;
     margin-top: 8px;
     font-size: 18px;
@@ -393,15 +401,15 @@ li, ol {
     font-family: "Sawarabi Gothic";
 }
 
-.shop .shop-info-wrapper .shop-sns {
+.shop .shop-wrapper .shop-sns {
     padding: 20px 0 0 0;
 }
 
-.shop .shop-info-wrapper .shop-sns-item {
+.shop .shop-wrapper .shop-sns-item {
     margin-right: 18px;
 }
 
-.shop .shop-info-wrapper .shop-sns-item img {
+.shop .shop-wrapper .shop-sns-item img {
     width: 24px;
     height: 24px;
 }

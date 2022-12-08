@@ -124,10 +124,16 @@ async function todaysMenuTop () {
     let swiperContainer = $(".swiper-container");
     let newTodaysMenu = $(".new-todaysmenu");
     let mainVisual = $(".main-visual");
-    let top = swiperContainer.height() - newTodaysMenu.height() - 64;
-    newTodaysMenu.css({top: top});
-    mainVisual.height(swiperContainer.height());
-} 
+    const mediaQuery = window.matchMedia('screen and (max-width: 768px)');
+    if (mediaQuery.matches) {
+        newTodaysMenu.css({top: ""});
+        mainVisual.css({height: ""});
+    } else {
+        let top = swiperContainer.height() - newTodaysMenu.height() - 64;
+        newTodaysMenu.css({top: top});
+        mainVisual.height(swiperContainer.height());            
+    }
+}
 
 async function waitTime (sec) {
     let promise = new Promise((resolve, reject) => {
