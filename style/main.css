@@ -1,11 +1,6 @@
-html {
-    position:relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
 html, body {
     position:relative;
+    overflow-x: hidden;
     width: 100%;
     background-color: #0C0C0C;
     color: #eeeeee;
