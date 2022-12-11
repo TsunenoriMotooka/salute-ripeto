@@ -1,5 +1,11 @@
 html, body {
     position:relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html, body {
+    position:relative;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
